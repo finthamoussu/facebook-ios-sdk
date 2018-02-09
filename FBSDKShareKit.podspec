@@ -40,7 +40,6 @@ Pod::Spec.new do |s|
                         'FBSDKShareKit/FBSDKShareKit/FBSDKShareKit.h',
                         'FBSDKShareKit/FBSDKShareKit/FBSDKShareAPI.{h,m}',
                         'FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.{h,m}',
-                        'FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.{h,m}',
                         'FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.{h,m}',
                         'FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.{h,m}',
                         'FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphAction.{h,m}',
@@ -53,12 +52,19 @@ Pod::Spec.new do |s|
                         'FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.{h,m}',
                         'FBSDKShareKit/FBSDKShareKit/FBSDKSharing.h',
                         'FBSDKShareKit/FBSDKShareKit/FBSDKSharingContent.h',
+                        'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerActionButton.h',
+                        'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateContent.{h,m}',
+                        'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateElement.{h,m}',
+                        'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerMediaTemplateContent.{h,m}',
+                        'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerOpenGraphMusicTemplateContent.{h,m}',
+                        'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerURLActionButton.{h,m}',
                         'FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareDefines.h',
                         'FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareError.{h,m}',
                         'FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareLinkContent+Internal.h',
                         'FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareOpenGraphValueContainer+Internal.h',
                         'FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareUtility.{h,m}',
-                        'FBSDKShareKit/FBSDKShareKit/Internal/FBSDKVideoUploader.{h,m}'
+                        'FBSDKShareKit/FBSDKShareKit/Internal/FBSDKVideoUploader.{h,m}',
+                        'FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareMessengerContentUtility.{h,m}'
   s.tvos.public_header_files = 'FBSDKShareKit/FBSDKShareKit/FBSDKDeviceShareButton.h',
                                'FBSDKShareKit/FBSDKShareKit/FBSDKDeviceShareViewController.h',
                                'FBSDKShareKit/FBSDKShareKit/FBSDKShareAPI.h',
@@ -66,6 +72,7 @@ Pod::Spec.new do |s|
                                'FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.h',
                                'FBSDKShareKit/FBSDKShareKit/FBSDKShareKit.h',
                                'FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.h',
+                               'FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.h',
                                'FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphAction.h',
                                'FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphContent.h',
                                'FBSDKShareKit/FBSDKShareKit/FBSDKShareOpenGraphObject.h',
@@ -75,7 +82,13 @@ Pod::Spec.new do |s|
                                'FBSDKShareKit/FBSDKShareKit/FBSDKShareVideo.h',
                                'FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.h',
                                'FBSDKShareKit/FBSDKShareKit/FBSDKSharing.h',
-                               'FBSDKShareKit/FBSDKShareKit/FBSDKSharingContent.h'
+                               'FBSDKShareKit/FBSDKShareKit/FBSDKSharingContent.h',
+                               'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerActionButton.h',
+                               'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateContent.h',
+                               'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerGenericTemplateElement.h',
+                               'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerMediaTemplateContent.h',
+                               'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerOpenGraphMusicTemplateContent.h',
+                               'FBSDKShareKit/FBSDKShareKit/FBSDKShareMessengerURLActionButton.h'
 
   s.header_dir = "FBSDKShareKit"
   # Allow the weak linking to Bolts (see FBSDKAppLinkResolver.h) in Cocoapods 0.39.0
